@@ -3,9 +3,9 @@
 
 JSR340 specification enable asynchronous approach to fecth some data by threads.
 
-When data are ready there is a callback to the requested thread which is going in charge to return the data. 
+When data are ready there is a callback to the request-thread which is going in charge to return the data. 
 
-More http requests are possible at the same time.
+Manage more http requests are possible at the same time.
 
  - Less CPU
  - Less Memory 
@@ -26,3 +26,11 @@ More http requests are possible at the same time.
 Jetty embedded on each microservice support non-blocking I/O connector. 
 
 ![image](https://github.com/antoniopaolacci/reactive-java-microservice/blob/master/img/pod.jpg)
+
+```xml
+<dependency>
+  <groupId>com.github.alessandroargentieri</groupId>
+  <artifactId>ReactiveJ</artifactId>
+  <version>1.0.3</version>
+</dependency>
+```
