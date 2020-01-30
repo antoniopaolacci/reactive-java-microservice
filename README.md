@@ -25,8 +25,6 @@ Manage more http requests are possible at the same time.
 
 Jetty embedded on each microservice support non-blocking I/O connector. 
 
-![image](https://github.com/antoniopaolacci/reactive-java-microservice/blob/master/img/pod.jpg)
-
 ```xml
 <dependency>
   <groupId>com.github.alessandroargentieri</groupId>
