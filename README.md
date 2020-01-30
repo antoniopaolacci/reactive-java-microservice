@@ -7,11 +7,11 @@ When data are ready there is a callback to the requested thread which is going i
 
 More http requests are possible at the same time.
 
--Less CPU
--Less Memory 
--Less Time
--Less Instances
--Less Money
+ - Less CPU
+ - Less Memory 
+ - Less Time
+ - Less Instances
+ - Less Money
 
 ![image](https://github.com/antoniopaolacci/reactive-java-microservice/blob/master/img/synchronous.jpg)
 
