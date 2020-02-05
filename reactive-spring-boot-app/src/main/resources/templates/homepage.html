@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+	  layout:decorator="layout">
+	  
+<head>
+ <title>homepage</title>
+</head>
+	
+	<body>
+		
+		<h1  layout:fragment="header">Homepage: Display some text.</h1>
+		
+		<div layout:fragment="content" class="container">
+			<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<td>Text</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:if="${outList.empty}">
+						<td colspan="4">No text.</td>
+					</tr>
+					<tr th:each="out : ${outList}">
+						<td th:text="${out}">Text</td>
+					</tr>
+				</tbody>
+			</table>		
+		</div> <!-- container -->	
+
+	</body> <!-- body -->
+	
+</html>
